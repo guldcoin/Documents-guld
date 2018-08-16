@@ -8,7 +8,7 @@ To claim, we will need to create an account to tie up to the phone number you ha
 
 # Form
 
-## PLease Input
+## Please Input
 
 - Phone Number
 - Desired Guld User Name
@@ -31,17 +31,4 @@ Once you have applied for your grant and username, we will need to sign your reg
 
 
 
-
-
-
-# Announcement for Alphagroup
-
-
-Greetings Gabriel and Alpha Team.
-
-Firstly, thanks to all present in this group for having enough vision to know that crypto platforms are the way we are changing the way the world towards more transparent, less corruptible and freer systems.
-
-As a step towards that goal, we would like to credit all members of this group chat with GULD, our
-
-We have set up a process for the registration of your desired accounts, where you can claim your GULD   
 
