@@ -1,0 +1,349 @@
+/*
+Template Name: GuldApp
+Description: HTML5 / CSS3 One Page
+Version: 1.0
+Author: Guld & Rio Myers
+Website: https://riomyers.com
+*/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background: #000;
+    background-size: cover;
+    height: 95vh;
+    min-height: 100%;
+    color: #fff;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: #D0B460;
+    font-weight: 300;
+}
+
+h1, h2, h3 {margin-bottom: 2rem;}
+
+.application-h {
+  margin: 0.5em 0;
+}
+
+#section-apply-profile,#section-apply-key,#section-apply-send,.section-register-individual {
+  padding: 1em 0;
+}
+
+.color-guld {
+    color: #D0B460;
+}
+
+.btn-primary {
+    color: #000;
+    background-color: #D0B460;
+    border-color: #fff;
+}
+
+a {
+	color: #D0B460;
+	cursor: pointer;
+}
+
+button{cursor: pointer;}
+
+.btn:hover{cursor: pointer;}
+
+.btn:focus{box-shadow: none;}
+
+pre {
+	background-color: #f7f7f7;
+	box-shadow: 0 2px 4px rgba(0,0,0,.15),0 0 3px rgba(0,0,0,.15);
+	padding: .99em;
+	overflow-x: auto;
+	white-space: pre;
+	font-size: .95em;
+	line-height: 1.8em;
+}
+
+code {
+	background-color: #f7f7f7;
+	padding: .2em;	
+}
+
+.navbar-nav {
+    font-size: 1.5em;
+    color: #D0B460;
+}
+
+.navbar-nav,.navbar-nav>li {display: inline-block;}
+
+.svg-inline--fa,.fa-rocket,.fa-user-astronaut,.dropdown-toggle,.active-commodity {
+    color: #D0B460 !important;
+}
+
+.navbar picture #logo-img {
+	position: absolute;
+	top: 1rem;
+    width: 5rem;
+}
+
+.transact-button {
+    width: 100%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+#section-error {
+    padding: 0;
+}
+
+.alert {
+	max-width: 70%;
+    margin: 1rem auto;
+}
+
+.alert-danger {
+    color: #fff;
+}
+
+.alert-dismissible {
+	padding: .73rem;
+}
+
+.modal-content {
+	padding: 1rem;
+}
+
+.navbar-nav .dropdown-menu {
+	position: absolute;
+}
+
+a.nav-link {
+    font-weight: 400;
+    text-shadow: 0 0 20px #000000;
+    opacity: 0.8;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    font-weight: 500;
+    opacity: 1;
+    flex-direction: row;
+}
+
+.section-title h1 {
+    margin: 0 0 3rem 0;
+    text-align: center;
+    font-size: 2.6rem;
+    line-height: 1.2em;
+    font-weight: 300;
+}
+
+.gray-bg {
+    background-color: #f0f1f3;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: -0.4rem 0 0 0;
+    min-height: 80%;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+#section-wallet {
+    padding-bottom: 1em;
+}
+
+#wallet-wrapper {
+	margin-top: 1rem;
+    border-bottom: 0px solid white;
+}
+
+#section-transaction-submit {
+    padding-top: 1em;
+}
+
+#section-transaction-submit button {
+    margin: 0.5em;
+}
+
+textarea {
+	box-sizing: border-box;	
+	width: 100%;
+	min-height: 200px;
+	margin-bottom: .5rem;
+}
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
+    border-color: #D0B460;
+    outline: 0 none;
+}
+
+input {
+	width: 100%;
+}
+
+.tooltip-inner {
+	border: solid #D0B460;
+	color: #D0B460;
+}
+
+.aliases{
+	font-size: 2rem;
+}
+
+.famarg {
+    margin: 0 0.25em;
+}
+
+.dash-card {
+	margin: 0 auto;
+}
+
+.space {
+	margin-bottom: 2rem;
+}
+
+.thumbnail img {
+    object-fit: cover;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.thumbnail h3 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.thumbnail h3 small {
+    font-size: 0.8rem;
+    margin: 0.4rem 0;
+    color: #888;
+    display: block;
+    font-weight: normal;
+}
+
+ul {
+	list-style: none;
+}
+
+.list-group {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.list-group button span {
+    float: right;
+}
+
+.badge-primary {
+    border: #c5c5c5 1px solid;
+    color: #c5c5c5;
+    font-weight: 400;
+    background: none;
+}
+
+.balance-card {
+  margin: 2.5%;
+  min-width: 33%;
+}
+
+.balance-card a {
+    color: #D0B460;
+}
+
+.footer {
+    padding: 2rem 0;
+    font-size: 1rem;
+    color: #888888;
+}
+
+.footer a {
+    color: #D0B460;
+}
+
+.footer .row {
+    margin: 0;
+}
+
+.dropdown-menu {
+    max-height: 420px;
+    overflow: auto;
+}
+
+.form-group {
+    margin: 0.5em;
+}
+
+#login-user {
+    width: 150px;
+    display: inline;
+}
+
+.login-dropdown {
+    width: 215px;
+}
+
+#loading-div {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    padding-top: 32%;
+    display: block;
+}
+
+.loading #loading-div {
+    display: block;
+}
+
+#loading-message-div {
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: 0.4rem;
+}
+
+#loading-message-div h3 {
+    color: #727272;
+}
+
+.loader {
+    border: 16px solid #323232; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@media screen and (max-width: 48rem) {
+    .alert {max-width: 90%}
+    .navbar-nav > li {margin-left: 1rem;}
+}
+
+@media screen and (max-width: 28rem) {
+    .section-title h1 {font-size: 2rem;margin: 0 0 2rem 0;}
+    .navbar-nav{left: 1rem;}
+    .navbar-nav > li {margin-left: .5rem;font-size: 1rem;}
+}
+
+#rendered-application {
+  white-space: pre-wrap;
+  width: 100%
+}
+
+.fa-lock,.fa-lock-open {
+  margin-top: 1em;
+  width: 100%;
+}
+

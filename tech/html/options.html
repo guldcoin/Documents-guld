@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="theme-color" content="#000000">
+	  <meta name="msapplication-navbutton-color" content="#000000">
+	  <meta name="apple-mobile-web-app-capable" content="yes">
+	  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	  <title>guld app options</title>
+    <!-- Style CSS -->
+    <link rel="icon" href="/img/favicon.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fa-svg-with-js.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="70">
+    <div class="container-fluid text-center">
+        <div id="header-wrapper">
+        </div>
+        <section id="section-options" class="section-wrapper">
+            <h1>Options</h1>
+            <div class="container">
+                <div class="row mt-4">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 text-center">
+                        <h2>Keyring Manager</h2>
+                        <div class="form-group text-left">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="keyring-manager-radios" id="keyring-manager-openpgpjs" value="openpgpjs" checked onchange="setLocalWindow('keyring_manager', 'openpgpjs')">
+                                <label class="form-check-label" for="keyring-manager-openpgpjs">OpenPGPJS</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="keyring-manager-radios" id="keyring-manager-offline" value="offline" onchange="setLocalWindow('keyring_manager', 'offline')">
+                                <label class="form-check-label" for="keyring-manager-offline">Offline</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 text-center">
+                        <h2>Data Node</h2>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="data-node" placeholder="https://guld.app" onblur="setLocalWindow('data_node', document.getElementById('data-node').value)">
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 text-center">
+                        <h2>Environment</h2>
+                        <div class="text-left" id="options-environment">
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+        </section>
+        <div class="modal fade" tabindex="-1" role="dialog" id="apply-danger-modal">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-dismissable" role="document">
+              <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" class="float-right">&times;</span>
+              </button>
+              <div class="alert alert-danger" id="apply-danger-message">
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <footer id="footer" class="footer"></footer>
+    <!-- JavaScript libs -->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="js/fontawesome-all.min.js" type="text/javascript"></script>
+    <script src="js/qrcode.min.js" type="text/javascript"></script>
+    <script src="js/openpgp.min.js" type="text/javascript"></script>
+    <script src="js/keyring-pgp.min.js" type="text/javascript"></script>
+    <script src="js/decimal.min.js" type="text/javascript"></script>
+    <script src="js/qs-local-window.js" type="text/javascript"></script>
+    <script src="js/error-display.js" type="text/javascript"></script>
+    <script src="js/load-html-component.js" type="text/javascript"></script>
+    <script src="js/ini.min.js" type="text/javascript"></script>
+    <script src="js/ledger-types.min.js" type="text/javascript"></script>
+    <script src="js/guld-ledger-register.min.js" type="text/javascript"></script>
+    <script src="js/guld-env.min.js" type="text/javascript"></script>
+    <script src="js/lib.js" type="text/javascript"></script>
+    <script src="js/options.js" type="text/javascript"></script>
+</body>
+
+</html>

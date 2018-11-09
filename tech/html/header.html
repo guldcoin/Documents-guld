@@ -1,0 +1,60 @@
+<nav class="navbar sticky-top navbar-expand-sm navbar-light">
+    <a class="navbar-brand page-scroll" href="/">
+      <picture id="logo" class="img-responsive" alt="Guld">
+			  <source media="(min-width: 450px)" srcset="/img/logo.svg">
+			  <source media="(min-width: 320px)" srcset="/img/logo_noname.svg">
+			  <img id="logo-img" src="/img/logo.svg" class="img-responsive" alt="Guld">
+		  </picture>
+    </a>
+    <ul class="navbar-nav mx-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle ledger-amount active-commodity" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="balance">0 GULD</a>
+            <div class="dropdown-menu dropdown-menu-right" id="token-dropdown">
+                <a onclick="javascript:changeCommodity('GULD')" id="send" class="dropdown-item ledger-amount">0 GULD</a>
+                <a onclick="javascript:changeCommodity('GG')" id="send" class="dropdown-item ledger-amount">0 GG</a>
+                <a onclick="javascript:changeCommodity('ISYSD')" id="send" class="dropdown-item ledger-amount">0 ISYSD</a>
+                <!--<a onclick="javascript:changeCommodity('BTC')" id="send" class="dropdown-item ledger-amount">0 BTC</a>
+                <a onclick="javascript:changeCommodity('ETH')" id="send" class="dropdown-item ledger-amount">0 ETH</a>
+                <a onclick="javascript:changeCommodity('DASH')" id="send" class="dropdown-item ledger-amount">0 DASH</a>-->
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle keyring-keyid active-key" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="active-key"><i class="fas fa-key"></i></a>
+            <div class="dropdown-menu dropdown-menu-right" id="key-dropdown">
+                <a href="key-edit.html" id="key-edit"><i class="fas fa-edit fa-2x"></i></a>
+                <a href="key-add.html" id="key-add"><i class="fas fa-plus fa-2x"></i></a>
+                <div class="dropdown-divider"></div>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-rocket"></i><!--<i class="fas fa-exchange-alt"></i>--></a>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a href="send.html" id="send-nav" class="dropdown-item">Send</a>
+                <a href="apply.html" id="register-nav" class="dropdown-item">Register</a>
+                <a href="grant.html" id="grant-nav" class="dropdown-item">Grant</a>
+                <a href="burn.html" id="burn-nav" class="dropdown-item">Burn</a>
+                <a href="deposit.html" id="deposit-nav" class="dropdown-item">Deposit</a>
+                <a href="convert.html" id="convert-nav" class="dropdown-item">Convert</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="login-dropdown-toggle"><i class="fas fa-user-astronaut d-none"></i><i class="fas fa-user-slash"></i></a>
+            <div class="dropdown-menu dropdown-menu-right login-dropdown" id="login-dropdown">
+                <a href="user-edit.html" id="user-edit"><i class="fas fa-edit fa-2x"></i></a>
+                <a href="user-add.html" id="user-add"><i class="fas fa-plus fa-2x"></i></a>
+                <div class="dropdown-divider"></div>
+                <a onclick="javascript:changeCommodity('GULD')" id="send" class="dropdown-item ledger-amount">0 GULD</a>
+                <a onclick="javascript:changeCommodity('GG')" id="send" class="dropdown-item ledger-amount">0 GG</a>
+                <a onclick="javascript:changeCommodity('ISYSD')" id="send" class="dropdown-item ledger-amount">0 ISYSD</a>
+                <div class="dropdown-divider"></div>
+                <form class="form-group" id="login-form">
+                    <input type="text" class="form-control" id="login-user" placeholder="other">
+                    <button type="submit">View</button>
+                </form>
+            </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="options.html"><i class="fas fa-cog"></i></a>
+        </li>
+    </ul>
+</nav>
